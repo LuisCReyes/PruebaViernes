@@ -11,11 +11,12 @@ labortorio1_libre = 0
 labortorio1_ocupada = 0    #Contadores necesarios a la hora que ejecute el ciclo
 labortorio2_libre = 0      #Cada uno de ellos corresponde a un laboratorio (ciclo) diferente
 labortorio2_ocupada = 0
+estado = ""
 for laboratorio in range (1,3): # Se supone que todo lo de adentro se repetira hasta 2 veces, dando los laboratorios 
     print(f"INGRESE LOS EL ESTADO DE LA COMPUTADORAS EN EL LABORATORIO {laboratorio}") # Como en pseudocodigo, me permitirá distinguir el momento que acabo el primer ciclo (Laboratorio)
     for filas in range (1, 6): # Repite el ciclo de for computadoras... 4 veces
         for computadoras in range (1,5): # Como este ciclo esta bajo influencia de el anterior, se supone que serían unas 5*4 veces, es decir 20 veces
-            while estado == "L" or estado == "O": #En este trato de asegurame que estado es solo L o solo O
+            while True: #En este trato de asegurame que estado es solo L o solo O
              estado = str(input("INGRESE EL ESTADO DE LA COMPUTADORA [L = LIBRE, O = OCUPADO]")) 
              if estado != "L" and estado != "O":  # Si ponen otro valor, les debería saltar el sig mensaje de error
                  print("ERROR, INGRESE EL VALOR REQUERIDO [L = LIBRE, O = OCUPADO]")
