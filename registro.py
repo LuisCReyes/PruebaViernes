@@ -6,7 +6,6 @@
 #ocupadas y libres por laboratorio. 
 
 print("ESTADO DE LAS COMPUTADORAS DE LABORATORIO 1 Y 2")
-print(f"==++=="*20)
 laboratorio1_libre = 0
 laboratorio1_ocupada = 0    #Contadores necesarios a la hora que ejecute el ciclo
 laboratorio2_libre = 0      #Cada uno de ellos corresponde a un laboratorio (ciclo) diferente
@@ -14,7 +13,9 @@ laboratorio2_ocupada = 0
 estado = ""
 for laboratorio in range (1,3): 
     # Se supone que todo lo de adentro se repetira hasta 2 veces, dando los laboratorios 
+    print(f"==++=="*20)
     print(f"\nINGRESE LOS EL ESTADO DE LA COMPUTADORAS EN EL LABORATORIO {laboratorio}") 
+    print(f"==++=="*20)
     # Como en pseudocodigo, me permitirá distinguir el momento que acabo el primer ciclo (Laboratorio)
     for filas in range (1, 6): 
     # Repite el ciclo de for computadoras... 4 veces
@@ -26,7 +27,9 @@ for laboratorio in range (1,3):
                 if estado == "L" or estado == "O":  
                 # Si ponen otro valor, les debería saltar el sig mensaje de error
                     break
+                print(f"------"*20)
                 print(f"\nERROR, INGRESE EL VALOR REQUERIDO [L = LIBRE, O = OCUPADO]") 
+                print(f"------"*20)
                 #Cuando deje d ingresar el valor equivocado, se dentedrá el cilo while (Dejara de aparecer el mensaje de error)
             if estado == "L": 
             #Con esta condición me aseguro el uso del contador para las L
