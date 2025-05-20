@@ -6,6 +6,7 @@
 #ocupadas y libres por laboratorio. 
 
 print("ESTADO DE LAS COMPUTADORAS DE LABORATORIO 1 Y 2")
+print("(20 computadoras por laboratorio)")
 laboratorio1_libre = 0
 laboratorio1_ocupada = 0    #Contadores necesarios a la hora que ejecute el ciclo
 laboratorio2_libre = 0      #Cada uno de ellos corresponde a un laboratorio (ciclo) diferente
